@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculatort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-white shadow-lg rounded-xl p-8 w-[400px] mx-auto">
+      <h1 class="text-2xl font-bold mb-6">BMI Calculator-Body Mass Index</h1>
+      <div class="mb-6">
+        <label class="block mb-2 font-medium" id="gender">Sex</label>
+        <div class="flex gap-6 items-center">
+          <label class="inline-flex items-center">
+            <input
+              id="female"
+              type="radio"
+              name="Gender"
+              class="form-radio text-blue-600"
+              checked
+            />
+            <span class="ml-2 font-medium">Female</span>
+          </label>
+
+          <label class="inline-flex items-center">
+            <input
+              id="male"
+              type="radio"
+              name="Gender"
+              class="form-radio text-blue-600"
+            />
+            <span class="ml-2 font-medium">Male</span>
+          </label>
+        </div>
+      </div>
+      <div class="mb-6">
+        <label class="block mb-2 font-medium">Height </label>
+        <div class="relative w-full">
+          <input
+            id="height"
+            type="number"
+            class="w-full border border-gray-300 rounded-md pl-3 pr-16 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <select
+            name=""
+            id="heightUnit"
+            class="absolute right-1 top-1 bottom-1 bg-white border-1 border-fray-300 rounded-r-md px-2 py-1 focus:outline-none"
+          >
+            <option value="cm">cm</option>
+            <option value="m">m</option>
+            <option value="in">inch</option>
+            <option value="ft">feet</option>
+          </select>
+        </div>
+      </div>
+      <div class="mb-6">
+        <label class="block mb-2 font-medium"> Weight</label>
+        <div class="relative w-full">
+          <input
+            id="weight"
+            type="text"
+            class="w-full border border-gray-300 rounded-md pl-3 pr-16 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+          <select
+            name=""
+            id="weightUnit"
+            class="absolute right-1 top-1 bottom-1 bg-white border-1 border-fray-300 rounded-r-md px-2 py-1 focus:outline-none"
+          >
+            <option id="kg" value="kg">kg</option>
+            <option id="lb" value="lb">ponds</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-6">
+        <label class="block mb-2 font-medium">BMI</label>
+        <div class="relative w-full">
+          <input
+            type="text"
+            id="bmi"
+            class="w-full border rounded-md py-2 px-3 focus:outline-none"
+            readonly
+          />
+        </div>
+      </div>
+
+      <div class="mb-6 text-center">
+        <button
+          onclick="generateBMI()"
+          class="bg-blue-600 text-white px-4 py-2 rounded-md"
+        >
+          Calculate BMI
+        </button>
+      </div>
+      <div class="mb-6">
+        <label class="block mb-2 font-medium">Recommendation</label>
+        <div class="relative w-full">
+          <textarea
+            id="recommendation"
+            class="w-full border rounded-md py-2 px-3 focus:outline-none h-20 resize-none"
+            readonly
+          ></textarea>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
