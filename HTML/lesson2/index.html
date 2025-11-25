@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Bootcamp</title>
+  </head>
+  <body>
+    <h1>Welcome to the html bootcamp!</h1>
+    <!-- tags
+     open
+     closed
+      -->
+    <!--  list => ordered list and unordered -->
+    <!-- <ol type="a" start="10"> -->
+    <!-- type="A"/ "a" /"1"/ "i" /"I" -->
+    <!-- <li>Yash</li>
+      <li>Mayank</li>
+      <li>Ankush</li>
+      <li>Keerthi</li>
+      <li>Ramesh</li>
+    </ol> -->
+
+    <!-- <ul type="none"> -->
+    <!-- type = "disc"(default)/ "none"/"Sqaure"/"circle" -->
+    <!-- <li>Yash</li>
+      <li>Mayank</li>
+      <li>Ankush</li>
+      <li>Keerthi</li>
+      <li>Ramesh</li>
+    </ul> -->
+
+    <!-- Tables -->
+    <!-- <table border>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+      </tr>
+      <tr>
+        <td>Bhavanasri</td>
+        <td>bhavanasri0322@gmail.com</td>
+        <td>Kakinada</td>
+      </tr>
+      <tr>
+        <td>Sriteja</td>
+        <td>tejavarma@gmail.com</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Yejarla</td>
+        <td></td>
+        <td>Kakinada</td>
+      </tr>
+    </table> -->
+
+    <!--  Input fields -->
+
+    <form action="" style="display: none">
+      <!-- action = where the data should be sent backend -->
+      <!-- <input type="text" placeholder="Enter the name" value="Bhavana" />
+      <label for="">Enter Email</label> -->
+      <h2>Register now!</h2>
+      <input
+        type="email"
+        placeholder="Enter the email"
+        required
+        value="bhavanasri03@gmail.com"
+        readonly
+      />
+      <br /><br />
+      <!-- <label for="">Enter password</label> -->
+      <input type="password" placeholder="Enter the password" />
+      <br /><br />
+      <!-- <input type="datetime-local" /> -->
+      <label for="">Gender</label><br /><br />
+      <label for="">Male</label>
+      <input type="radio" name="Gender" />
+      <label for="">Female</label>
+      <input type="radio" name="Gender" />
+      <br /><br />
+      <label for="">Check all suitable criteria</label>
+      <label for="">Graduate</label>
+      <input type="checkbox" name="cr" /><br /><br />
+      <label for="">Graduate</label>
+      <input type="checkbox" name="cr" /><br /><br />
+      <label for="">Graduate</label>
+      <input type="checkbox" name="cr" /><br /><br />
+      <label for="">Graduate</label>
+      <input type="checkbox" name="cr" /><br /><br />
+      <label for="">Graduate</label>
+      <input type="checkbox" name="cr" /><br /><br />
+
+      <label for="">Select your degree</label>
+      <select name="degree" id="">
+        <option name="degree" value="">BTech</option>
+        <option name="degree" value="">MTech</option>
+        <option name="degree" value="">BCA</option>
+        <option name="degree" value="">MCA</option>
+      </select>
+
+      <input type="text" minlength="10" maxlength="12" />
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- semantic tags: To structure the content -->
+    <!-- main, header, nav, aside, footer, section -->
+
+    <main>
+      <header>
+        <p>this is my header</p>
+      </header>
+
+      <section>
+        <aside>
+          <p>this is my main content</p>
+        </aside>
+
+        <div>this is my sidebar</div>
+      </section>
+      <footer>this is my footer</footer>
+    </main>
+
+    <div>
+      <div>this is my header</div>
+      <div>
+        <div>this is main content</div>
+        <div>this is my side bar</div>
+      </div>
+      <div>this is my footer</div>
+    </div>
+
+    <p>This is a <span>html bootcamp</span></p>
+  </body>
+</html>
+<!-- html biolerplate -->
