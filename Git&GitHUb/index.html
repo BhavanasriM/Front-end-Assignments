@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Commands</title>
+  </head>
+  <body>
+    <div style="width: 500px; margin: auto;">
+      <img src="download.jpg" width="500px" alt="">
+      <p>
+        Git is a powerful version control system with a wide array of commands.
+        Here are some of the most commonly used Git commands, categorized by
+        their function:
+      </p>
+      <h3>Setting up a Repository:</h3>
+      <ul>
+        <li>
+          <strong>git init:</strong> Initializes a new Git repository in the
+          current directory.
+        </li>
+        <li><strong>git clone <repository-url>:</strong> Clones an existing remote repository to your local machine.</li>
+      </ul>
+      <h3>Saving Changes:</h3>
+      <ul>
+        <li><strong>git add <file-name>:</strong> Stages a specific file for the next commit.</li>
+        <li><strong>git add .:</strong> Stages all changes in the current directory for the next commit.</li>
+        <li><strong>git commit -m "Commit message":</strong> Records the staged changes to the repository with a descriptive message.</li>
+        <li><strong>git status:</strong> Shows the status of your working directory and staged files, indicating untracked, modified, and staged changes.</li>
+      </ul>
+
+      <h3>Branching and Merging:</h3>
+      <ul>
+        <li><strong>git branch:</strong> Lists all local branches.</li>
+        <li><strong>git branch <new-branch-name>:</strong> Creates a new local branch.</li>
+        <li><strong>git checkout <branch-name>:</strong> Switches to a different branch.</li>
+        <li><strong>git checkout -b <new-branch-name>:</strong> Creates a new branch and switches to it.</li>
+        <li><strong>git merge <branch-name>:</strong> Merges the specified branch's history into the current branch.</li>
+      </ul>
+      <h3>Working with Remote Repositories:</h3>
+      <ul>
+        <li><strong>git remote add <remote-name> <remote-url>:</strong> Connects your local repository to a remote repository.</li>
+        <li><strong>git fetch:</strong> Downloads objects and refs from another repository.</li>
+        <li><strong>git pull:</strong> Fetches changes from a remote repository and merges them into your current branch.</li>
+        <li><strong>git push <remote-name> <branch-name>:</strong> Uploads local branch commits to the remote repository.</li>
+      </ul>
+      <h3>Inspecting History:</h3>
+      <ul>
+        <li><strong>git log:</strong> Displays the commit history for the current branch.</li>
+        <li><strong>git diff:</strong> Shows the differences between files or commits.</li>
+      </ul>
+      <h3>Undoing Changes:</h3>
+      <ul>
+        <li><strong>git reset --hard <commit-id>:</strong> Resets the current branch to the specified commit, discarding all changes.</li>
+        <li><strong>git reset --soft <commit-id>:</strong> Resets the current branch to the specified commit, keeping changes in the staging area.</li>
+      </ul>
+    </div>
+  </body>
+</html>

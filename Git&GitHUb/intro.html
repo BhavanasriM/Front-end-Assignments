@@ -14,9 +14,45 @@ steps to use gitHub
 3.git init inside your project folder
 4. git status => to check the status of your files
 5. git add . => to add all the files to staging area or git add filename
-6. git commit -m "message" => to commit the changes to local repo
+6.git status => to check the status of your files
+7. git commit -m "message" => to commit the changes to local repo
+8.git log => to check the commit history
 
+if you done any thing wrong in code and added and committed also but you want to go to previous version then use git reset --hard commitid.
+commit id you can get from git log
+git reset --soft commitid => it will keep your changes in staging area. use it when you dont want to lose your changes when going to previous version.
+
+9. git remote add origin "url" => to link your local repo to remote repo
+10. git branch -M main => to rename your default branch to main
+11. git push -u origin main => to push your local changes to remote repo
+# see current status and branch
+git status
+git branch --show-current
+
+# stage and commit changes
+git add .
+git commit -m "Describe your changes"
+
+# push the current branch to origin and set upstream (only first time)
+git push -u origin $(git branch --show-current)
+
+# on subsequent pushes you can just:
+git push
+
+git remote -v => to verify the remote url
+
+for testing purpose
+git branch test
+
+now there will be two branches main and test
+to toggle between branches
+git checkout test
+git checkout main
+
+TO MERGE BRANCHES
+git merge test  => while you are in main branch
 -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
